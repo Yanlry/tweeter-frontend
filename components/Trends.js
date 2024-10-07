@@ -6,7 +6,7 @@ function Trends() {
 
   useEffect(() => {
     console.log('Trends component mounted');
-    fetch('https://tweeter-backend-eta.vercel.app/tweets/trends')
+    fetch('https://hackatweet-backend-omega.vercel.app/tweets/trends')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
