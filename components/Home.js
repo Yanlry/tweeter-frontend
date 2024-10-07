@@ -25,7 +25,7 @@ function Home() {
   useEffect(() => {
     console.log('Fetching all tweets...');
   
-    fetch('https://hackatweet-backend-omega.vercel.app/tweets/all')
+    fetch('https://tweeter-backend-two.vercel.app/tweets/all')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -54,7 +54,7 @@ function Home() {
   };
 
   const handleSubmit = () => {
-    fetch('https://hackatweet-backend-omega.vercel.app/tweets', {
+    fetch('https://tweeter-backend-two.vercel.app/tweets', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ token: user.token, content: newTweet }),

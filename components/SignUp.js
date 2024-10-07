@@ -19,7 +19,7 @@ function SignUp() {
   const [password, setPassword] = useState('');
 
   const handleSubmit = () => {
-    fetch('https://hackatweet-backend-omega.vercel.app/users/signup', {
+    fetch('https://tweeter-backend-two.vercel.app/users/signup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ firstName, username, password }), 

@@ -15,7 +15,7 @@ function Hashtag() {
   const user = useSelector((state) => state.user.value);
 
   const fetchTweetsByHashtag = (hashtag) => {
-    fetch(`https://hackatweet-backend-omega.vercel.app/tweets/hashtag/${hashtag}`)
+    fetch(`https://tweeter-backend-two.vercel.app/tweets/hashtag/${hashtag}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.result) {
